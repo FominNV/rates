@@ -2,7 +2,7 @@
 
 Данное небольшое приложение написано на:
 
-Бибилотеки - React.js, Typescript, Redux;
+Бибилотеки - React.js, Typescript, Redux-thunk;
 
 Стилизация - Sass, BEM, flexbox;
 
