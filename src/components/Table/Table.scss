@@ -1,0 +1,44 @@
+@import "../../sass/main";
+
+.Table {
+  width: 100%;
+  background: $gray-low-light;
+  border-radius: 8px;
+
+  thead {
+    height: 48px;
+    background: $black;
+    font: 700 18px/21px $mont-semibold;
+    color: $sky;
+    border-bottom: 1px solid $black;
+  }
+
+  tbody {
+    min-height: 300px;
+    font: 500 16px/18px $mont-regular;
+  }
+
+  td {
+    height: 36px;
+    padding: 5px 0;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  &__column {
+    &_first {
+      width: 20%;
+      min-width: 100px;
+    }
+
+    &_second,
+    &_third {
+      width: 40%;
+      min-width: 100px;
+    }
+  }
+
+  &__tooltip {
+    font: 500 14px/16px $mont-medium;
+  }
+}

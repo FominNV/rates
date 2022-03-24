@@ -1,0 +1,11 @@
+@import "../../sass/main";
+
+.PercentCounter {
+  &_high {
+    color: green;
+  }
+
+  &_low {
+    color: red;
+  }
+}

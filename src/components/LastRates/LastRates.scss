@@ -1,0 +1,35 @@
+@import "../../sass/main";
+
+.LastRates {
+  width: 100%;
+  @include flex;
+  flex-wrap: wrap;
+  font: 500 14px/16px $mont-medium;
+  background: $sky;
+
+  @media (max-width: $lg) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  @media (max-width: $md) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  &__item {
+    height: 60px;
+    width: 10%;
+    padding: 6px 0;
+    @include flex(space-between, center, column);
+
+    @media (max-width: $md) {
+      height: 50px;
+      width: 20%;
+    }
+
+    &_date {
+      border-bottom: 1px solid $black;
+    }
+  }
+}

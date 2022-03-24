@@ -1,0 +1,46 @@
+@import "../../sass/main";
+
+.TableRow,
+.TableRow_even {
+  position: relative;
+  border-top: 1px solid $transparent;
+  border-left: 1px solid $transparent;
+  border-right: 1px solid $transparent;
+
+  &:hover {
+    transform: scaleX(1.01);
+    background: $blue-gray;
+  }
+
+  &_even {
+    background: $gray-light;
+  }
+
+  &.active {
+    background: $sky;
+    text-decoration: underline;
+    border-color: $black;
+
+    &:hover {
+      transform: scaleX(1);
+    }
+  }
+
+  &__lastRates,
+  &__lastRates_active {
+    display: none;
+    padding: 0;
+    background: $sky;
+    border-bottom: 1px solid $black;
+    border-left: 1px solid $black;
+    border-right: 1px solid $black;
+
+    &_active {
+      display: table-row;
+    }
+
+    &_td {
+      height: 50px;
+    }
+  }
+}
