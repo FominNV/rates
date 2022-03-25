@@ -29,7 +29,9 @@ const TableRow: FC<ITableRowProps> = ({
     <>
       <tr
         data-name={name}
-        className={`TableRow${even ? "_even" : ""} ${showLastRates ? "active" : ""}`}
+        className={`TableRow ${even ? "TableRow_even" : ""} ${
+          showLastRates ? "TableRow_active" : ""
+        }`}
         onMouseEnter={onMouseEnterHandler}
         onClick={onClickHandler}
       >
@@ -39,7 +41,10 @@ const TableRow: FC<ITableRowProps> = ({
           <PercentCounter prev={prevValue} current={currentValue} />
         </td>
       </tr>
-      <tr className={`TableRow__lastRates${showLastRates ? "_active" : ""}`}>
+      <tr
+        className={`TableRow__lastRates ${showLastRates ? "TableRow__lastRates_active" : ""}`}
+        onClick={onClickHandler}
+      >
         <td colSpan={3} className="TableRow__LastRates_td">
           <LastRates code={code} />
         </td>

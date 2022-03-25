@@ -45,7 +45,7 @@ const Table: FC = (): JSX.Element => {
             <td className="Table__column_third">%</td>
           </tr>
         </thead>
-        <tbody>{rates && createTable(rates)}</tbody>
+        <tbody data-tip={valueName}>{rates && createTable(rates)}</tbody>
       </table>
 
       <ReactTooltip
