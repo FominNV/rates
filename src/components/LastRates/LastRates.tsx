@@ -13,7 +13,7 @@ const LastRates: FC<ILastRatesProps> = ({ code }): JSX.Element => {
 
   const showLastRates = (data: ILastRates[]): ReactNode => {
     return data.map((elem: ILastRates, i: number) => {
-      const date = format(new Date(elem.date), "dd.MM")
+      const date = format(new Date(elem.date), "dd.MM.yy")
       let prevValue = 0
       let currentValue = 0
 
