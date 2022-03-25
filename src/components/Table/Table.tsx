@@ -37,7 +37,7 @@ const Table: FC = (): JSX.Element => {
 
   return (
     <>
-      <table className="Table" data-tip={valueName}>
+      <table className="Table">
         <thead>
           <tr>
             <td className="Table__column_first">Код валюты</td>
